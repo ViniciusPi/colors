@@ -1,3 +1,4 @@
+import 'package:change_colors/controllers/color_controller.dart';
 import 'package:flutter/material.dart';
 
 class Bottons extends StatefulWidget {
@@ -21,7 +22,11 @@ class _BottonsState extends State<Bottons> {
               width: 100,
               child: FlatButton(
                 height: 50,
-                onPressed: () {},
+                onPressed: () {
+                  setState(() {
+                    color = "Red";
+                  });
+                },
                 child: Text(
                   'RED',
                   style: TextStyle(color: Colors.white),

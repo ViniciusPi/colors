@@ -1,3 +1,5 @@
+import 'package:change_colors/controllers/color_controller.dart';
+
 import 'package:flutter/material.dart';
 
 import 'color_bottons.dart';
@@ -24,7 +26,13 @@ class _AppLayoutState extends State<AppLayout> {
         child: Padding(
           padding: const EdgeInsets.all(0.0),
           child: FloatingActionButton(
-              tooltip: "botão", elevation: 0, onPressed: () {}),
+              tooltip: "botão",
+              elevation: 0,
+              onPressed: () {
+                setState(() {
+                  color = '';
+                });
+              }),
         ),
       ),
     );
