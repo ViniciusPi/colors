@@ -21,7 +21,7 @@ class _ColorAppState extends State<ColorApp> {
       debugShowCheckedModeBanner: false,
       home: AppLayout(),
       theme: ThemeData(
-        primarySwatch: funColor(),
+        primarySwatch: Changer.instance.funColor(),
       ),
     );
   }

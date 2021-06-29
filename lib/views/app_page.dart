@@ -30,7 +30,7 @@ class _AppLayoutState extends State<AppLayout> {
               elevation: 0,
               onPressed: () {
                 setState(() {
-                  color = '';
+                  Changer.instance.color = '';
                 });
               }),
         ),

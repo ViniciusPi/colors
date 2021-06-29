@@ -24,8 +24,9 @@ class _BottonsState extends State<Bottons> {
                 height: 50,
                 onPressed: () {
                   setState(() {
-                    color = "Red";
+                    Changer.instance.color = 'Red';
                   });
+                  ;
                 },
                 child: Text(
                   'RED',
