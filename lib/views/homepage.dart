@@ -13,6 +13,8 @@ class _HomePageState extends State<HomePage> {
     switch (c) {
       case true:
         return Colors.amber;
+      default:
+        return Colors.blue;
     }
   }
 
@@ -20,6 +22,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: funcColor(),
         title: Text('this title sucks'),
       ),
       body: Center(
