@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'views/homepage.dart';
 
 main() {
-  runApp(ColorApp());
+  runApp(const ColorApp());
 }
 
 class ColorApp extends StatelessWidget {
@@ -11,7 +11,7 @@ class ColorApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: HomePage(),
     );
   }
