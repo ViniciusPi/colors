@@ -33,7 +33,7 @@ class _HomePageState extends State<HomePage> {
       c = 1;
     });
     while (rainbow) {
-      await Future.delayed(const Duration(milliseconds: 500));
+      await Future.delayed(const Duration(milliseconds: 400));
       setState(() {
         c++;
       });
@@ -53,7 +53,7 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         centerTitle: true,
         backgroundColor: funcColor(),
-        title: const Text('this title sucks'),
+        title: const Text('Color App'),
       ),
       body: Center(
         child: Column(
